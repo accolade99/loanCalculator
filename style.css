@@ -66,7 +66,7 @@ body {
     max-width: 500px;
 }
 img{
-    margin-top: 70px; margin-left: 145px; border-radius: 7px; 
+    margin-left: 145px; border-radius: 7px; 
     /*box-shadow: 1.5px 1.5px 3px rgb(127, 127, 252);*/
     box-shadow: 0 0 10px rgba(105, 107, 231, 0.4);
 }
@@ -79,7 +79,7 @@ img{
 }
 
 h2 {
-    color: #12148f; text-align: center; margin-bottom: 1rem; margin-top: px;
+    color: #12148f; text-align: center; margin-bottom: 1rem; margin-top: -7px;
     grid-column: 1 / -1; text-shadow: 1px 2px 2px rgb(89, 89, 250);
 }
 
