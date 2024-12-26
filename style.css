@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+#calculateBtn{
+    margin-top: 15px; background-color: #1b1d88; color: white;
+    padding: 1px 17px; border-radius: 20px; border: 1px solid blue;
+    box-shadow: 1px 2px 3px blue; cursor: pointer;
+}
+.result-value{
+    color: #12148f; font-weight: bolder;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/*.container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #f8fbfd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}*/
+
+/*.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f8fbfd;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}*/
+#amount, #interest, #years{
+    padding: 8px 15px;
+}
+
+.input-section {
+    padding: 2rem;
+    background: rgb(253, 252, 252);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; margin-top: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+img{
+    margin-top: 70px; margin-left: 145px; border-radius: 7px; 
+    /*box-shadow: 1.5px 1.5px 3px rgb(127, 127, 252);*/
+    box-shadow: 0 0 10px rgba(105, 107, 231, 0.4);
+}
+
+.results-section {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #12148f; text-align: center; margin-bottom: 1rem; margin-top: px;
+    grid-column: 1 / -1; text-shadow: 1px 2px 2px rgb(89, 89, 250);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #12148f;
+    font-weight: 600;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+#calculateBtn:hover{
+    background-color: #3e40d4;
+}
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}

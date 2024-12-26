@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loanCalculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <img src="./loanAppLogo.png" height="50px" width="70px" alt="Loan App Logo">
+        <div class="calculator">
+            <div class="calculator-header">
+                <h2>Dandy's Smart loan Calculator</h2>
+                <p class="subtitle" style="margin-top: -10px;">
+                    Calculate your monthly payment and total interest easily
+                </p>
+            </div>
+
+            <div class="calculator-body">
+                <div class="input-section">
+                    <div class="input-group">
+                    <label for="amount">Loan Amount($)</label>
+                    <input type="number" id="amount" placeholder="e.g. 250000">
+                    <span class="input-icon"></span>
+                </div>
+                <div class="input-group">
+                    <label for="interest">Annual Interest Rate (%)</label>
+                    <input type="number"
+                    id="interest"
+                    step="0.1"
+                    placeholder="e.g. 5.5"
+                    >
+                    <span class="input-icon"></span>
+                </div>
+                <div class="input-group">
+                    <label for="years">Loan Term (years)</label>
+                    <input type="number" id="years" placeholder="e.g. 30">
+                    <span class="input-icon"></span>
+                </div>
+                <button id="calculateBtn">calculate Loan <span class="button-icon"></span>
+                </button>
+            </div>
+
+            <div class="results">
+                <h3 style="color: #12148f; margin-top: 8px;">Loan Summary</h3>
+                <div class="result-grid">
+                    <div class="result-item">
+                        <span class="result-label">Monthly Payment:</span>
+                        <span class="result-value" id="monthly">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Payment:</span>
+                        <span class="result-value" id="total">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Interest:</span>
+                        <span class="result-value" id="totalInterest">$0.00</span>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
+
